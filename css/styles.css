@@ -10,3 +10,20 @@ img {
 body {
     background: url(../img/silver_scales.png);
 }
+ nav {
+     list-style: none;
+     text-decoration: none;
+     display: inline-block;
+ }
+ 
+ a:link {
+     color: coral;
+ }
+ 
+ a:hover {
+     color: lightblue;
+     border-left: coral;
+     padding: 5px;
+     transition: .5s;
+ }
+ 
