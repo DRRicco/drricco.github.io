@@ -3,14 +3,12 @@ h1 {
     font-family: 'Droid Serif', serif;
 }
 
-img {
-    width: 25%;
-}
 
 body {
     background: url(../img/silver_scales.png);
 }
- nav {
+
+nav {
      list-style: none;
      text-decoration: none;
      display: inline-block;
@@ -27,3 +25,6 @@ body {
      transition: .5s;
  }
  
+img {
+    max-width: 50%;
+}
