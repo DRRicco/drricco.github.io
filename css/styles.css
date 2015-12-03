@@ -28,3 +28,16 @@ nav {
 img {
     max-width: 50%;
 }
+
+.gallery {
+    height: 100px;
+}
+
+.gallery .item {
+    background: none;
+}
+
+.controls {
+    height: 25px;
+    display: inline-block;
+}
