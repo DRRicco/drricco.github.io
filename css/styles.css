@@ -1,43 +1,112 @@
-h1 {
-    color: rgba(0,0,0,.5);
-    font-family: 'Droid Serif', serif;
-}
-
-
 body {
-    background: url(../img/silver_scales.png);
+    background: url(../img/tree_bark.png);
+    margin: 0 auto;
+    width: 80%; /* 1000px=100% */
 }
 
-nav {
-     list-style: none;
-     text-decoration: none;
-     display: inline-block;
- }
- 
- a:link {
-     color: coral;
- }
+h1 {
+    color: #339966;
+    font-family: 'Droid Serif', serif;
+    float: left;
+    margin:auto;
+    margin-right: 10px;
+}
+
+h2 {
+    color: #d2c1ac;
+    font-family: 'Droid Serif', serif;
+    margin:auto;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+h1.resume {
+    margin-right: 20px;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+/* Base Link Styling */
+a:link, a:visited {
+  border-left: 4px solid #2b1d0e;
+  display: block;
+  width: 100px;
+  height: 32px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 32px;
+  color: #339966;
+  transition: all .5s;
+}
+
  
  a:hover {
-     color: lightblue;
-     border-left: coral;
-     padding: 5px;
+     color: #d2c1ac;
+     border-left: #339966;
+     background: #2b1d0e;
      transition: .5s;
  }
+
  
-img {
+img.profile {
     max-width: 50%;
+    border-radius: 0 0 25px 25px;
+    border-top: 8px solid #2b1d0e;
+    margin: auto;
 }
 
-.gallery {
-    height: 100px;
+
+
+
+
+article, aside {
+  float: left;
+    width: auto;
 }
 
-.gallery .item {
-    background: none;
+article {
+  background: #2b1d0e;
+    color: #d2c1ac;
+  margin: 1%; /* 10px / 1000px = 1% */
+  padding: 1.785%; /* 10px / 560px = */
+  width: 53%; /* 560px / 1000px = 56%*/
+  max-width: 560px;
 }
 
-.controls {
-    height: 25px;
-    display: inline-block;
+aside {
+  background: #339966;
+    color: #2b1d0e;
+  margin: 1%;
+  padding: 2.777%; /* 10px / 360px = 2.777 */
+  width: 32%; /* 400px-40px=360px 36%-4%=32% */
+  max-width: 360px;
 }
+
+@media (max-width: 480px) {
+    h1, nav, article, aside {
+        float: none;
+        display: inline;
+        max-width: 80%;
+    }
+    
+    article {
+        background: #2b1d0e;
+    }
+    
+    img.profile {
+        max-width: 90%;
+    }
+  }
+
+@media (max-width: 720px) {
+    h1, nav {
+        float: none;
+    }
+        img.profile {
+        max-width: 90%;
+    }
+  }
